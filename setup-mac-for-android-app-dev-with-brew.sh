@@ -59,6 +59,11 @@ pwd
 cd ..
 rm -fr fonts
 
+brew install zsh-syntax-highlighting
+brew install zsh-autosuggestions
+brew install zsh-completions
+brew install gradle-completion
+
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "Done!!!"
