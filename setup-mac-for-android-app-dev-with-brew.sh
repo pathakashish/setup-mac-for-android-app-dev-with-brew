@@ -35,6 +35,7 @@ echo 'export PATH=$ANDROID_HOME/tools:$PATH' >> ~/.zprofile
 echo '/usr/libexec/java_home' >> ~/.zprofile
 echo 'export GRADLE_HOME=/usr/local/opt/gradle' >> ~/.zprofile
 echo 'export PATH=$GRADLE_HOME/bin:$PATH' >> ~/.zprofile
+echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zprofile
 echo 'export PATH="/opt/homebrew/sbin:$PATH"' >> ~/.zprofile
 echo 'ZSH_THEME="robbyrussell"' >> ~/.zprofile
 
