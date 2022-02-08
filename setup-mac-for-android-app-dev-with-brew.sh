@@ -44,6 +44,9 @@ spwan zsh {
   rm -fr fonts
 
   echo 'ZSH_THEME="robbyrussell"' >> ~/.zshrc
+  
+  mkdir -p ~/Library/Android
+  ln /usr/local/share/android-sdk ~/Library/Android/sdk
 }
 source ~/.zshrc
 # Update android-sdk
