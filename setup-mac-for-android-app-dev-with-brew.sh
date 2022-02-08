@@ -52,4 +52,4 @@ spwan zsh {
 }
 source ~/.zshrc
 # Update android-sdk
-android update sdk --no-ui
+sdkmanager update sdk --no-ui
