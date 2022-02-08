@@ -45,7 +45,7 @@ source ~/.zprofile
 
 # Update android-sdk
 java8
-# sdkmanager --install 'build-tools;29.0.3' 'build-tools;30.0.3' 'build-tools;31.0.0' 'build-tools;32.0.0' 'platform-tools' 'platforms;android-29' 'platforms;android-30' 'platforms;android-31' 'platforms;android-32' 'platforms;android-28' 'tools' 'cmake;3.18.1' 'ndk;23.1.7779620' 'ndk;23.1.7779620'
+# sdkmanager --install 'build-tools;29.0.3' 'build-tools;30.0.3' 'build-tools;31.0.0' 'build-tools;32.0.0' 'platform-tools' 'platforms;android-29' 'platforms;android-30' 'platforms;android-31' 'platforms;android-32' 'platforms;android-28' 'tools' 'cmake;3.18.1' 'ndk;23.1.7779620' 'ndk;23.1.7779620' 'cmdline-tools;latest'
 sdkmanager --install 'build-tools;32.0.0' 'platform-tools' 'cmake;3.18.1'
 java11
 
