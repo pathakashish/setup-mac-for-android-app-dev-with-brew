@@ -36,7 +36,8 @@ spwan zsh {
   echo 'export PATH=$ANDROID_HOME/tools:$PATH' >> ~/.zshrc
   echo '/usr/libexec/java_home' >> ~/.zshrc
   echo 'export GRADLE_HOME=/usr/local/opt/gradle' >> ~/.zshrc
-  ech 'export PATH=$GRADLE_HOME/bin:$PATH' >> ~/.zshrc
+  echo 'export PATH=$GRADLE_HOME/bin:$PATH' >> ~/.zshrc
+  echo 'export PATH="/opt/homebrew/sbin:$PATH"' >> ~/.zshrc'
 
   git clone https://github.com/powerline/fonts.git
   cd fonts
