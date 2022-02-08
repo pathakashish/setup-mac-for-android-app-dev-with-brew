@@ -8,6 +8,9 @@ spwan zsh {
 
   # Install homebrew
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/test/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 
   # Install commonly required dev tools for android app development
   brew install git
