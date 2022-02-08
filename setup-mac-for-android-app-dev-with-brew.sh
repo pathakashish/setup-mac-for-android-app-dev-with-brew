@@ -17,6 +17,7 @@ spwan zsh {
   brew install android-studio
   brew install android-sdk
   brew install gradle
+  brew install gpg
 
   # Install iterm2 and oh-my-zsh
   brew install --cask iterm2
