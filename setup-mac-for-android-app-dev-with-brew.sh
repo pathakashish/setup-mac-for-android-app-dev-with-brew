@@ -3,13 +3,12 @@
 # echo '' >> ~/.zshrc
 
 cd ~
+pwd
 
-spawn zsh {
-  # Install homebrew
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-}
-  
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/test/.zprofile
+# Install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$(whoami)/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install commonly required dev tools for android app development
@@ -44,14 +43,19 @@ echo 'export PATH="/opt/homebrew/sbin:$PATH"' >> ~/.zshrc
 
 git clone https://github.com/powerline/fonts.git
 cd fonts
-sh -c install.sh
+pwd
+./install.sh
 cd ..
 rm -fr fonts
 
 echo 'ZSH_THEME="robbyrussell"' >> ~/.zshrc
 
 mkdir -p ~/Library/Android
-ln /usr/local/share/android-sdk ~/Library/Android/sdk
+ln -s /opt/homebrew/share/android-sdk/ ~/Library/Android/sdk
 source ~/.zshrc
 # Update android-sdk
-sdkmanager update sdk --no-ui
+# sdkmanager --install 'build-tools;29.0.3' 'build-tools;30.0.3' 'build-tools;31.0.0' 'build-tools;32.0.0' 'platform-tools' 'platforms;android-29' 'platforms;android-30' 'platforms;android-31' 'platforms;android-32' 'platforms;android-28' 'tools' 'cmake;3.18.1' 'ndk;23.1.7779620' 'ndk;23.1.7779620'
+sdkmanager --install 'build-tools;32.0.0' 'platform-tools' 'cmake;3.18.1' 'ndk;23.1.7779620'
+
+cd ~
+pwd
